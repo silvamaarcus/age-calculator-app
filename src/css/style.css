@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  font-style: none;
+  list-style: none;
+}
+
+.font-input-title {
+  font: 700 0.875rem/1.5 "Poppins", sans-serif;
+}
+
+.font-input {
+  font: 700 2rem/1.5 "Poppins", sans-serif;
+}
+
+.font-result {
+  font: 800i 6.25rem/1.5 "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */
