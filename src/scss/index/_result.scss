@@ -1,0 +1,27 @@
+.container-result div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+span {
+  color: $p1;
+}
+
+@media (max-width: 768px) {
+  .font-result {
+    font: italic 700 2rem/1.5 "Poppins", sans-serif;
+  }
+}
+
+@media (max-width: 568px) {
+  .font-result {
+    font: italic 700 1.5rem/1.5 "Poppins", sans-serif;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-result {
+    font: italic 700 1rem/1.5 "Poppins", sans-serif;
+  }
+}

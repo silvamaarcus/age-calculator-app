@@ -1,0 +1,28 @@
+.btn-principal {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.btn-principal::before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: absolute;
+  z-index: -1;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $n2;
+}
+
+@media (max-width: 768px) {
+  .btn-principal {
+    justify-content: center;
+  }
+}

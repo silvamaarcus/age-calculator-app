@@ -1,0 +1,23 @@
+.main{  
+  padding: 56px;
+}
+
+.main-container {
+  background: $n1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px;
+  border-radius: 20px 20px 200px 20px; 
+}
+
+@media (max-width: 568px) {
+  .main-container {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    padding: 16px;
+  }
+}

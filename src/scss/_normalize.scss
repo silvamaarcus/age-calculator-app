@@ -1,3 +1,5 @@
+@import "./colors";
+
 * {
   padding: 0;
   margin: 0;
@@ -6,4 +8,9 @@
   text-decoration: none;
   font-style: none;
   list-style: none;
+  outline: none;
+}
+
+body {
+  background-color: $n2; 
 }
