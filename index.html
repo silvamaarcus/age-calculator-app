@@ -18,36 +18,36 @@
       <div class="container-date">
         <div>
           <label for="day" class="font-input-title">DAY</label>
-          <input type="number" id="day" min="0" max="31" placeholder="DD">
+          <input type="number" id="day" min="0" max="31" placeholder="DD" required>
         </div>
 
         <div>
           <label for="month" class="font-input-title">MONTH</label>
-          <input type="number" id="month" min="0" max="12" placeholder="MM">
+          <input type="number" id="month" min="0" max="12" placeholder="MM" required>
         </div>
 
         <div>
           <label for="year" class="font-input-title">YEAR</label>
-          <input type="number" id="year" min="0" placeholder="YYYY">
+          <input type="number" id="year" min="0" placeholder="YYYY" required>
         </div>
       </div>
 
-      <button type="submit" class="btn-principal">
+      <button type="button" class="btn-principal" id="btn-js">
         <img src="./src/image/button.png">
       </button>
 
       <div class="container-result font-result">
-        <div>
+        <div class="result-years">
           <span>--</span>
           <h1>years</h1>
         </div>
 
-        <div>
+        <div class="result-months">
           <span>--</span>
           <h1>months</h1>
         </div>
 
-        <div>
+        <div class="result-days">
           <span>--</span>
           <h1>days</h1>
         </div>
