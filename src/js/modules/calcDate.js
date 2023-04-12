@@ -1,6 +1,7 @@
 export default function calcDate() {
   const btn = document.getElementById('btn-js');
   const inputs = document.querySelectorAll('input'); // Setando os inputs, para zerá-los, se necessário.
+  const screenSize = window.innerWidth;
 
   btn.addEventListener('click', () => {
     let dayInput = document.getElementById('day').value;
@@ -31,12 +32,20 @@ export default function calcDate() {
 
     //Inserir resultado no HTML através do DOM.
     document.querySelector('.result-years span').innerText = yearsDifference;
-    document.querySelector('.result-years span').style.fontSize = 100 + 'px';
-
     document.querySelector('.result-months span').innerText = monthsDifference;
-    document.querySelector('.result-months span').style.fontSize = 100 + 'px';
-
     document.querySelector('.result-days span').innerText = daysDifference;
-    document.querySelector('.result-days span').style.fontSize = 100 + 'px';
+
+    if (screenSize > 400) {
+      // Versão Desktop
+      document.querySelector('.result-years span').style.fontSize = 100 + 'px';
+      document.querySelector('.result-months span').style.fontSize = 100 + 'px';
+      document.querySelector('.result-days span').style.fontSize = 100 + 'px';
+    }
+    else if (screenSize <= 400) {
+      // Versão Mobile
+      document.querySelector('.result-years span').style.fontSize = 40 + 'px';
+      document.querySelector('.result-months span').style.fontSize = 40 + 'px';
+      document.querySelector('.result-days span').style.fontSize = 40 + 'px';
+    }
   });
 }
