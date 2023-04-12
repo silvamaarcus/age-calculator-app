@@ -1,7 +1,7 @@
 export default function calcDate() {
   const btn = document.getElementById('btn-js');
   const inputs = document.querySelectorAll('input'); // Setando os inputs, para zerá-los, se necessário.
-  const screenSize = window.innerWidth;
+  const screenSize = window.innerWidth; // Obeter largura da págin p/ aplicar responsividade na font.
 
   btn.addEventListener('click', () => {
     let dayInput = document.getElementById('day').value;
