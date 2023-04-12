@@ -9,7 +9,6 @@ export default function calcDate() {
     let yearInput = document.getElementById('year').value;
 
     if (dayInput > 0 && monthInput > 0 && yearInput > 0) {
-
       // Validando a data fornecida no input.
       if (dayInput > 31 || monthInput > 12) {
         alert('INVALID DATE!!!');
