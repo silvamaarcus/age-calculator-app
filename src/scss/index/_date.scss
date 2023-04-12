@@ -24,6 +24,11 @@ input:focus {
   border: 2px solid $p1;
 }
 
+// Efeito pelo JS
+input:focus.active {
+  border: 2px solid red;
+}
+
 @media (max-width: 768px) {
   .container-date {
     grid-template-columns: repeat(3, 1fr);

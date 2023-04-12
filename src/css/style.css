@@ -70,6 +70,10 @@ input:focus {
   border: 2px solid #864cff;
 }
 
+input:focus.active {
+  border: 2px solid red;
+}
+
 @media (max-width: 768px) {
   .container-date {
     grid-template-columns: repeat(3, 1fr);
@@ -153,4 +157,9 @@ span {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.validation-msg {
+  font: italic 400 0.75rem/1.5 "Poppins", sans-serif;
+  color: red;
 }/*# sourceMappingURL=style.css.map */
